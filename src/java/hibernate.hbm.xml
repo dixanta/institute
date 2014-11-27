@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.pagodalabs.institute.beans.Course" table="courses">
+      <id name="id" type="int" column="course_id">
+         <generator class="native"/>
+      </id>
+      <property name="name" column="course_name" type="string"/>
+      <property name="description" column="course_description" type="string"/>
+      <property name="status" column="status" type="boolean"/>      
+  </class>
+</hibernate-mapping>
